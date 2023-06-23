@@ -12,9 +12,9 @@ export default function CounterApp({value}) {
   return (
     <>
       <h1>{counter}</h1>
-      <button onClick={increase}>1+</button>
-      <button onClick={decrease}>1-</button>
-      <button onClick={reset}>RESET</button>
+      <button onClick={increase}>+1</button>
+      <button onClick={decrease}>-1</button>
+      <button aria-label='btn-reset' onClick={reset}>RESET</button>
     </>
   )
 }
