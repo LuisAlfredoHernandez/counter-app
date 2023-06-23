@@ -1,9 +1,8 @@
 import propTypes from 'prop-types'
-import './App.css'
 import {useState} from 'react'
 
 
-export default function App({value}) {
+export default function CounterApp({value}) {
   const [counter, setCounter] = useState(value);
  
   const increase = () => setCounter(counter+1)
@@ -20,13 +19,13 @@ export default function App({value}) {
   )
 }
 
-App.propTypes={
+CounterApp.propTypes={
   name:propTypes.string,
   title:propTypes.string,
   value:propTypes.number.isRequired
 }
 
-App.defaultProps ={
+CounterApp.defaultProps ={
   name: "Vegueta",
   title: "DBZ",
   subTitle: 22222,
